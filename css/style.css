@@ -60,7 +60,7 @@ h3 {
 
 #container .box {
   width: 50%;
-  float: left;
+  float: right;
   color: #fff;
   height: 350px;
 }
@@ -72,7 +72,8 @@ h3 {
 
 #container #box-image {
   display: inline-block;
-  background: url(../img/image-header-desktop.jpg) no-repeat;
+  background: url(../img/image-header-desktop.jpg) no-repeat no-repeat center
+    center/cover;
 }
 
 #container #box-image .layer {
@@ -84,4 +85,32 @@ h3 {
 /* stats */
 .stat {
   float: left;
+}
+
+/* media queries */
+@media (max-width: 1278px) {
+  .px-15 {
+    padding-right: 14%;
+  }
+}
+
+@media (max-width: 1210px) {
+  .px-15 {
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 1005px) {
+  .px-15 {
+    padding-right: 8%;
+  }
+}
+
+@media (max-width: 925px) {
+  .px-15 {
+    padding-right: 5%;
+  }
+  .py-5 {
+    padding-top: 7%;
+  }
 }
